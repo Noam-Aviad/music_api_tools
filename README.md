@@ -10,6 +10,54 @@ lyricsgenius
 This module uses the spotipy and lyricsgenius libaries to provide a simple way to gather data from the Spotify and Genius API's, and to modify Spotify playlists.
 The module has different classes to handle songs, albums and artists as demonstrated below.
 
+## Example:
+Initializing a Song object:
+````
+import music_api_tools as mt
+werewolves_of_london = mt.Song(title = 'Werewolves of London')
+````
+
+input:
+````
+print(werewolves_of_london.artist.name)
+````
+output:
+````
+Warren Zevon
+````
+input:
+````
+print(werewolves_of_london.album.title)
+````
+output:
+````
+Excitable Boy
+````
+input:
+````
+print(werewolves_of_london.album.spotify_data)
+````
+output:
+````
+{'album_type': 'album', 'artists': [{'external_urls': {'spotify': 'https://open.spotify.com/artist/3mY9Ii0cL5SQxpOTAm8SHx'}, ...
+````
+input:
+````
+print(werewolves_of_london.genius_data)
+````
+output:
+````
+{'song': {'annotation_count': 22, 'api_path': '/songs/72605', 'apple_music_id': '1048476311', ...
+````
+input:
+````
+print(werewolves_of_london.artist.word_frequencies())
+````
+output:
+````
+{'well,': 195, "i'm": 663, 'gone': 28, 'to': 1501, 'detox': 16, 'mansion': 17, 'way': 94, 'down': 517, 'on': 890, 'last': 46, ...
+````
+
 ### class Song:
 Accepts one of the following to initialize: title and optionally artist_name (strings), genius_id (int) or spotify_id (string).
 
