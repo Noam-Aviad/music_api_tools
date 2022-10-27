@@ -124,7 +124,8 @@ class Song:
             lyrics = lyrics.removeprefix(self.title + " Lyrics")
             lyrics = re.sub(r'\[[A-Za-z \s 0-9]+\]', '', lyrics)
             lyrics = re.sub(r'[0-9]+Embed', '', lyrics)
-        return lyrics
+        self.lyrics = lyrics
+        return self.lyrics
 
     def words_count(self, only_unique = False):
         lyrics = self.lyrics(tidy_up=True).split()
