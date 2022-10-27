@@ -1,0 +1,5 @@
+{"Spotify client id": "Insert Sptify client ID",
+ "Spotify client secret": "Insert secret",
+ "Spotify scope": "user-library-read playlist-read-private",
+ "Spotify redirect": "Insert Spotify redirect URL",
+ "Genius token": "Insert Genius access token"}
