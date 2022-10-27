@@ -11,6 +11,7 @@ This module uses the spotipy and lyricsgenius libaries to provide a simple way t
 The module has different classes to handle songs, albums and artists as demonstrated below.
 
 ### class Song:
+Accepts one of the following to initialize: title and optionally artist_name (strings), genius_id (int) or spotify_id (string).
 
 #### Attributes:
 
@@ -30,9 +31,9 @@ The module has different classes to handle songs, albums and artists as demonstr
 
 **artist** - artist object
 
-**lyrics** - song lyrics (string). Only initiallized after calling the lyrics() method.
+**lyrics** - song lyrics (string). Only initialized after calling the lyrics() method.
 
-**word_frequencies** - words from the song and each word's frequency (dict). Only initiallized after calling the word_frequencies() method.
+**word_frequencies** - words from the song and each word's frequency (dict). Only initialized after calling the word_frequencies() method.
 
 #### Methods:
 
@@ -45,6 +46,7 @@ The module has different classes to handle songs, albums and artists as demonstr
 **word_frequencies(caps_sensitive (bool))** - returns (and stores as attribute) the frequencies of each word in the song (dict).
 
 ### class Album:
+Accepts one of the following to initialize: title and optionally artist_name (strings), genius_id (int) or spotify_id (string).
 
 #### Attributes:
 
@@ -60,13 +62,13 @@ The module has different classes to handle songs, albums and artists as demonstr
 
 **genius_data** - album data from Genius (dict)
 
-**songs** - list of Song objects of the album's tracks. Only initiallized after calling the songs() method.
+**songs** - list of Song objects of the album's tracks. Only initialized after calling the songs() method.
 
 **artist** - artist object
 
 **words** - list of words from the album's songs. Only initiallized after calling the words() method.
 
-**word_frequencies** - words from the album's songs and each word's frequency (dict). Only initiallized after calling the word_frequencies() method.
+**word_frequencies** - words from the album's songs and each word's frequency (dict). Only initialized after calling the word_frequencies() method.
 
 #### Methods:
 
@@ -77,6 +79,7 @@ The module has different classes to handle songs, albums and artists as demonstr
 **word_frequencies(caps_sensitive (bool))** - returns (and stores as attribute) the frequencies of each word in the album (dict).
 
 ### class Artist:
+Accepts one of the following to initialize: name (string), genius_id (int) or spotify_id (string).
 
 #### Attributes:
 
@@ -92,13 +95,13 @@ The module has different classes to handle songs, albums and artists as demonstr
 
 **genius_data** - artist data from Genius (dict)
 
-**songs** - list of Song objects by the artist. Only initiallized after calling the songs() method.
+**songs** - list of Song objects by the artist. Only initialized after calling the songs() method.
 
-**albums** - list of Album objects by the artist. Only initiallized after calling the albums() method.
+**albums** - list of Album objects by the artist. Only initialized after calling the albums() method.
 
-**words** - list of words from the artist's songs. Only initiallized after calling the words() method.
+**words** - list of words from the artist's songs. Only initialized after calling the words() method.
 
-**word_frequencies** - words from the artistm's songs and each word's frequency (dict). Only initiallized after calling the word_frequencies() method.
+**word_frequencies** - words from the artistm's songs and each word's frequency (dict). Only initialized after calling the word_frequencies() method.
 
 #### Methods:
 
