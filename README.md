@@ -10,7 +10,7 @@ lyricsgenius
 This module uses the spotipy and lyricsgenius libaries to provide a simple way to gather data from the Spotify and Genius API's, and to modify Spotify playlists.
 The module has different classes to handle songs, albums and artists as demonstrated below.
 
-## Example:
+## Examples:
 Initializing a Song object:
 ````
 import music_api_tools as mt
