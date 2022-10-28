@@ -60,6 +60,15 @@ output:
 {'well,': 195, "i'm": 663, 'gone': 28, 'to': 1501, 'detox': 16, 'mansion': 17, 'way': 94, 'down': 517, 'on': 890, 'last': 46, ...
 ````
 
+### class Spot: 
+This class mainly passes data from spotipy to the other classes. 
+
+It also has the ````merge_playlists(new_playlist (str), playlists(list of strings), remove_duplicates (bool))```` method which  accepts the ID's of your Spotify playlists and creates a new playlist with all the content from your other playlists.
+
+*If you don't specify any playlists, by default it will use all of your playlists.
+
+*This method can't merge playlists with local files.
+
 ### class Song:
 Accepts one of the following to initialize: title and optionally artist_name (strings), genius_id (int) or spotify_id (string).
 
