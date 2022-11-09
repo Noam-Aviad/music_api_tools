@@ -1,5 +1,10 @@
 # music_api_tools
 
+## Description:
+
+This module uses the spotipy and lyricsgenius libaries to provide a simple way to gather data from the Spotify and Genius API's, and to modify Spotify playlists.
+The module has different classes to handle songs, albums and artists as demonstrated below.
+
 ## Requirements:
 spotipy
 
@@ -7,10 +12,6 @@ lyricsgenius
 
 Get the API keys (as explained in these links: [Spotify](https://medium.com/@maxtingle/getting-started-with-spotifys-api-spotipy-197c3dc6353b) and [Genius](https://melaniewalsh.github.io/Intro-Cultural-Analytics/04-Data-Collection/07-Genius-API.html)) and place them in the keys.txt file.
 
-## Description:
-
-This module uses the spotipy and lyricsgenius libaries to provide a simple way to gather data from the Spotify and Genius API's, and to modify Spotify playlists.
-The module has different classes to handle songs, albums and artists as demonstrated below.
 
 ## Examples:
 Initializing a Song object:
