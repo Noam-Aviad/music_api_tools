@@ -2,7 +2,7 @@
 
 ## Description:
 
-This module uses the spotipy and lyricsgenius libaries to provide a simple way to gather data from the Spotify and Genius API's, and to modify Spotify playlists.
+This module uses the spotipy and lyricsgenius libraries to provide a simple way to gather data from the Spotify and Genius API's, and to modify Spotify playlists.
 The module has different classes to handle songs, albums and artists as demonstrated below.
 
 ## Requirements:
